@@ -1,1 +1,4 @@
 site_name: Research on Network Security
+
+theme:
+ name: readthedocs
