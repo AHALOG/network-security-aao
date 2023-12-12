@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Network Security Applications and Tools - Research on Network Security</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Network Security Applications and Tools";
+        var mkdocs_page_input_path = "network_security_applications.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Research on Network Security
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../network_security_strategies/">Network Security Strategies</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Network Security Applications and Tools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#firewalls">Firewalls</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-a-firewall">What Is a Firewall?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#different-types-of-firewalls">Different types of firewalls</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#choosing-firewall">Choosing Firewall</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#intrusion-detection-systems-a-research-perspective">Intrusion Detection Systems: A Research Perspective</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-an-intrusion-detection-system-ids">What is an Intrusion Detection System (IDS)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#role-of-ids-in-network-security">Role of IDS in Network Security</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ids-types-and-techniques">IDS Types and Techniques</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#antivirus-software">Antivirus Software</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#importance-of-antivirus-software">Importance of Antivirus Software</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#evolution-of-antivirus-software">Evolution of Antivirus Software</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selecting-the-right-antivirus">Selecting the Right Antivirus</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cryptography-and-encryption-tools">Cryptography and Encryption Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#understanding-cryptography">Understanding Cryptography</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#encryption-tools">Encryption Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#advancements-in-cryptography">Advancements in Cryptography</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#best-practices">Best Practices</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../current_network_security_issues/">Current Network Security Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../network_security_policies/">Network Security Policy (to be updated)</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Research on Network Security</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Network Security Applications and Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="network-security-applications-and-tools">Network Security Applications and Tools</h1>
+<h2 id="firewalls">Firewalls</h2>
+<p>Delving into the first line of defense in network security.</p>
+<h3 id="what-is-a-firewall">What Is a Firewall?</h3>
+<p>A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.</p>
+<p>Firewalls have been a first line of defense in network security for over 25 years. They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet. </p>
+<p>A firewall can be hardware, software, software-as-a service (SaaS), public cloud, or private cloud (virtual).</p>
+<h3 id="different-types-of-firewalls">Different types of firewalls</h3>
+<ul>
+<li>
+<p><strong>Proxy firewall</strong>
+An early type of firewall device, a proxy firewall serves as the gateway from one network to another for a specific application. Proxy servers can provide additional functionality such as content caching and security by preventing direct connections from outside the network. However, this also may impact throughput capabilities and the applications they can support.</p>
+</li>
+<li>
+<p><strong>Stateful inspection firewall</strong>
+Now thought of as a “traditional” firewall, a stateful inspection firewall allows or blocks traffic based on state, port, and protocol. It monitors all activity from the opening of a connection until it is closed. Filtering decisions are made based on both administrator-defined rules as well as context, which refers to using information from previous connections and packets belonging to the same connection.</p>
+</li>
+<li>
+<p><strong>Next-generation firewall</strong>
+Firewalls have evolved beyond simple packet filtering and stateful inspection. Most companies are deploying next-generation firewalls to block modern threats such as advanced malware and application-layer attacks.</p>
+</li>
+</ul>
+<p>According to Gartner, Inc.’s definition, a next-generation firewall must include:</p>
+<p>Intelligence-based access control with stateful inspection
+Integrated intrusion prevention system (IPS)
+Application awareness and control to see and block risky apps
+Upgrade paths to include future information feeds
+Techniques to address evolving security threats
+URL filtering based on geolocation and reputation
+While these capabilities are increasingly becoming the standard for most companies, NGFWs can do more.</p>
+<h3 id="choosing-firewall">Choosing Firewall</h3>
+<p>Choosing the right firewall for your usage is crucial, as firewalls operate at different layers of the OSI (Open Systems Interconnection) model to meet specific security requirements and needs. Traditional firewalls work primarily at the network layer (Layer 3) to filter traffic based on IP addresses and ports. Advanced versions extend their functionality to the transport layer (Layer 4) for stateful packet inspection and the application layer (Layer 7) for in-depth content inspection. This adaptability enables firewalls to offer nuanced security control, tailoring traffic monitoring and management to various network layers, thereby reinforcing the network's overall security. The choice of firewall should align with the specific security needs of the network it is protecting.</p>
+<h2 id="intrusion-detection-systems-a-research-perspective">Intrusion Detection Systems: A Research Perspective</h2>
+<h3 id="what-is-an-intrusion-detection-system-ids">What is an Intrusion Detection System (IDS)</h3>
+<p>An intrusion detection system (IDS) is an application that monitors network traffic and searches for known threats and suspicious or malicious activity. The IDS sends alerts to IT and security teams when it detects any security risks and threats.</p>
+<p>Most IDS solutions simply monitor and report suspicious activity and traffic when they detect an anomaly. However, some can go a step further by taking action when it detects anomalous activity, such as blocking malicious or suspicious traffic.</p>
+<p>IDS tools typically are software applications that run on organizations’ hardware or as a network security solution. There are also cloud-based IDS solutions that protect organizations’ data, resources, and systems in their cloud deployments and environments.</p>
+<h3 id="role-of-ids-in-network-security">Role of IDS in Network Security</h3>
+<p>Intrusion Detection Systems are crucial for identifying potential unauthorized access or attacks on a network.
+They monitor network traffic and system activities for malicious activities or policy violations.</p>
+<h3 id="ids-types-and-techniques">IDS Types and Techniques</h3>
+<p>Includes Network-based IDS (NIDS) and Host-based IDS (HIDS).
+Utilizes various methods such as signature-based, anomaly-based, and heuristic analysis to detect intrusions.</p>
+<h2 id="antivirus-software">Antivirus Software</h2>
+<p>Antivirus software (antivirus program) is a security program designed to prevent, detect, search and remove viruses and other types of malware from computers, networks and other devices. Often included as part of a security package, antivirus software can also be purchased as a standalone option.</p>
+<h3 id="importance-of-antivirus-software">Importance of Antivirus Software</h3>
+<p>Antivirus software plays a critical role in protecting networks against malware, viruses, and other cyber threats. It is designed to detect, prevent, and remove malicious software.</p>
+<ul>
+<li><strong>Detection Capabilities</strong>: Utilizes various methods like signature-based, behavior-based, and heuristic analysis to identify threats.</li>
+<li><strong>Real-Time Protection</strong>: Offers continuous scanning and monitoring to safeguard systems against real-time threats.</li>
+</ul>
+<h3 id="evolution-of-antivirus-software">Evolution of Antivirus Software</h3>
+<p>Over the years, antivirus software has evolved significantly, adapting to counter increasingly sophisticated cyber threats.</p>
+<ul>
+<li><strong>Advanced Features</strong>: Modern antivirus solutions include features like cloud-based analysis, machine learning capabilities, and integration with other security tools.</li>
+<li><strong>Challenges</strong>: Addressing zero-day exploits and advanced persistent threats remains a challenge for antivirus software.</li>
+</ul>
+<h3 id="selecting-the-right-antivirus">Selecting the Right Antivirus</h3>
+<p>Choosing the right antivirus software depends on specific needs and network environments.</p>
+<ul>
+<li><strong>Considerations</strong>: Effectiveness, system compatibility, ease of use, and the impact on system performance are key factors.</li>
+<li><strong>Recommendations</strong>: Regular updates and proactive management are essential for maintaining the effectiveness of antivirus software.</li>
+</ul>
+<h2 id="cryptography-and-encryption-tools">Cryptography and Encryption Tools</h2>
+<p>This section delves into the critical roles of cryptography and encryption tools in network security.</p>
+<h3 id="understanding-cryptography">Understanding Cryptography</h3>
+<p>Cryptography is the art of protecting information by transforming it into an unreadable format. It's crucial for secure communication and data protection.</p>
+<ul>
+<li><strong>Types of Cryptography</strong>: Includes symmetric-key cryptography, asymmetric-key cryptography, and hashing.</li>
+<li><strong>Applications</strong>: Used in securing emails, files, and network communications.</li>
+</ul>
+<h3 id="encryption-tools">Encryption Tools</h3>
+<p>Encryption tools apply cryptographic algorithms to protect data.</p>
+<ul>
+<li><strong>Data Encryption</strong>: Tools like PGP (Pretty Good Privacy) and SSL/TLS protocols for secure internet communications.</li>
+<li><strong>Role in Network Security</strong>: Essential for protecting data in transit and at rest from unauthorized access and breaches.</li>
+</ul>
+<h3 id="advancements-in-cryptography">Advancements in Cryptography</h3>
+<p>The field of cryptography is continuously evolving to counter new threats.</p>
+<ul>
+<li><strong>Modern Developments</strong>: Incorporation of quantum cryptography and advanced encryption standards (AES).</li>
+<li><strong>Challenges</strong>: Addressing issues like quantum computing's impact on current encryption methods.</li>
+</ul>
+<h3 id="best-practices">Best Practices</h3>
+<p>Implementing encryption effectively requires adherence to best practices.</p>
+<ul>
+<li><strong>Key Management</strong>: Secure storage and handling of encryption keys.</li>
+<li><strong>Regular Updates</strong>: Keeping encryption tools updated to ensure robust security against emerging threats.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>
+<p>Vyshnavi, S., Sree, S. R., &amp; Jayapandian, N. (2019). Network Security Tools and Applications in Research perspective. 2019 Third International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC). https://doi.org/10.1109/i-smac47947.2019.9032526</p>
+</li>
+<li>
+<p>What is a firewall? (2023, October 6). Cisco. https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html</p>
+</li>
+<li>
+<p>What is an intrusion prevention system (IPS)? | IBM. (n.d.). https://www.ibm.com/topics/intrusion-prevention-system</p>
+</li>
+<li>
+<p>Stallings, W. (1998). Cryptography and network Security: Principles and practice. http://ci.nii.ac.jp/ncid/BA77930100</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../network_security_strategies/" class="btn btn-neutral float-left" title="Network Security Strategies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../current_network_security_issues/" class="btn btn-neutral float-right" title="Current Network Security Issues">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../network_security_strategies/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../current_network_security_issues/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
