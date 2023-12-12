@@ -7,19 +7,19 @@ In this documentation, we delve into the multifaceted world of network security,
 
 ## What You Will Learn
 
-* [**Network Security Strategies:**](/network_security_strategies)
+* [**Network Security Strategies:**](network_security_strategies.md)
 Gain insights into the importance of physical, software, and network security strategies. Understand how strategic approaches to data security and privacy can fortify your network against intrusions.
 
-* [**Network Security Applications and Tools:**](/network_security_applications)
+* [**Network Security Applications and Tools:**](network_security_applications.md)
 Explore essential security applications such as firewalls, Intrusion Detection Systems (IDS), Intrusion Prevention Systems (IPS), and antivirus software. Learn about the role of cryptography and encryption tools in enhancing data security.
 
-* [**Network Security Policies:**](/network_security_policies)
+* [**Network Security Policies:**](network_security_policies.md)
 Discover the steps involved in creating and implementing robust network security policies. Learn about the establishment and maintenance of data security standards.
 
-* [**Security Audits and Tests:**](security_audits_tests)
+* [**Security Audits and Tests:**](security_audits_tests.md)
 Understand the significance of network security audits and how they are conducted. Explore the various types of network security tests and their benefits.
 
-* [**Current Network Security Issues and Solutions:**](/current_network_security_issues)
+* [**Current Network Security Issues and Solutions:**](current_network_security_issues.md)
 Stay informed about current challenges in network security, including Distributed Denial of Service (DDoS) attacks, data breaches, and other security threats. Learn about the best practices for detecting and mitigating security vulnerabilities.
 
 ## My Approach and Commitment to Continual Learning

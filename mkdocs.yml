@@ -2,3 +2,10 @@ site_name: Research on Network Security
 
 theme:
  name: readthedocs
+
+nav:
+ - index.md
+ - network_security_strategies.md
+ - network_security_applications.md
+ - current_network_security_issues.md
+ - network_security_policies.md
